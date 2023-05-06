@@ -1,0 +1,15 @@
+INPUT:
+
+#include<stdio.h>
+int main()
+{
+	int n;
+	for(n=2;n<=20;n++)
+	{
+		if(n%2==0)
+		   printf("%d ",n);
+	}
+}
+
+OUTPUT:
+2 4 6 8 10 12 14 16 18 20
