@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main() 
+{
+    int n,i,sum=0,sign=1;
+
+    printf("Enter a range: ");
+    scanf("%d", &n);
+
+    for (i=1;i<=n;i++) 
+	{
+        sum += sign*i;
+        sign = -sign;
+    }
+    printf("Sum of the series: %d\n", sum);
+    return 0;
+}
+
+OUTPUT:
+Enter a range: 10
+Sum of the series: -5
