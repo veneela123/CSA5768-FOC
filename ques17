@@ -1,0 +1,25 @@
+#include <stdio.h>
+void printDigit(int N)
+{
+    int r;
+
+    if (N == 0)
+    {
+        return;
+    }
+    r = N % 10;
+    printDigit(N / 10);
+    printf("%d ", r);
+}
+int main()
+{
+    int N;
+    printf("enter an integer:");
+    scanf("%d",&N);
+    printDigit(N);
+    return 0;
+}
+
+OUTPUT:
+enter an integer:8569
+8 5 6 9
