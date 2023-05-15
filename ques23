@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int a,b;
+    printf("Enter the value of a :");
+    scanf("%d",&a);
+    printf("Enter the value of b :");
+    scanf("%d",&b);
+
+    a = a + b; 
+    b = a - b; 
+    a = a - b; 
+    printf("After swapping");
+    printf("\na = %d \nb = %d", a, b);
+    return 0;
+}
+
+OUTPUT:
+Enter the value of a :5
+Enter the value of b :2
+After swapping
+a = 2
+b = 5
